@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  
+</head>
+<body>
+   <div class="container" >
+          <header>
+                <nav>
+                  <div class="nav-items nav-right" >
+                    <i class="fas fa-bars"></i>
+
+                    <h1 class="header-text">sneakers</h1>
+                 <div class="nav-list">
+                   <img src="images/icon-close.svg" class="icon-close"/>
+                      <ul >
+                        <li><a href="#"> 
+                          Collections</a></li>
+                        <li><a href="#"> Men</a></li>
+                        <li><a href="#"> Women</a></li>
+                        <li><a href="#"> About</a></li>
+                        <li><a href="#"> Contact</a></li>
+                  </ul>
+               </div>
+                   
+                  </div>
+                    <figure class="nav-items nav-left" >
+                          <img src="./images/icon-cart.svg" alt="" class="cart-img" id="checkout-basket">
+                          <img src="./images/image-avatar.png" alt="" class="customer-avatar">
+                    </figure>
+                  
+                </nav>
+          </header>
+          <main>
+                <div class="main-wrapper container">
+                      <div class="product-column product-display">
+                              <figure class="main-image">
+                                  <img src="./images/image-product-1.jpg" alt="" class="main-img">
+                              </figure>
+                              <div class="cart-checkout">
+                                  <h3>Cart</h3> 
+                                    <div class="checkout-wrapper">
+                                      <div class="text-image-div">
+                                        <img src="./images/image-product-1.jpg"  alt="" class="checkout-img">
+                                        <div>
+                                          <p>Autumn Limited Edition...</p>
+                                          <p>$125.00 x 3 $375.00</p>
+                                        </div>
+                                      </div>
+                                     
+                                        
+                                        <img src="./images/icon-delete.svg" alt="" class="icon-delete">
+                                    </div>
+                                    <button class="add-to-cart checkout" >
+                                          checkout
+                                   </button>
+                              </div>
+                              <div class="switch-image-btn">
+                        
+                                <button class="prev-image"><img src="./images/icon-previous.svg" alt=""></button>
+                            
+                                <button class="next-image"><img src="./images/icon-next.svg" alt=""></button>
+                           
+                             </div>
+                              <figure class="click-img">
+                                    <img src="./images/image-product-1-thumbnail.jpg" alt="" class="small-img">
+                                    <img src="./images/image-product-2-thumbnail.jpg" alt="" class="small-img">
+                                    <img src="./images/image-product-3-thumbnail.jpg" alt="" class="small-img">
+                                    <img src="./images/image-product-4-thumbnail.jpg" alt="" class="small-img">
+                              </figure>
+                      </div>
+
+                      <div class="product-column product-desc">
+                              <h4 class="product-type">Sneaker Company</h4>
+                              <h2 class="product-caption">  Fall Limited Edition Sneakers</h2>
+                        
+                              <p class="product-body"> 
+
+                                These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                                durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                              <div class="product-pricing">
+                                <div class="discount-prices">
+                                  <p class="current-price">  $125.00</p>
+                                  <p class="discount-percent"> 50%</p>
+                                </div>
+                                  <p class="original-price"> $250.00</p>
+                              </div>
+                      
+                              <div class="buttons">
+                                <div class="multi-btn">
+                                  <button class="icon-minus"> <img src="./images/icon-minus.svg" alt="" ></button>
+                                  <span class="display-amount">0</span>
+                                  <button class="icon-plus"><img src="./images/icon-plus.svg" alt=""></button>
+                                </div>
+                                  <button class="add-to-cart">
+                                       <img src="./images/icon-cart.svg" alt="" class="cart-image" class="icon-plus">
+                                       <span>Add to cart</span>
+                                  </button>
+                              </div>
+
+                      </div>
+                </div>
+          </main>
+   </div>
+   <script src="./index.js"></script>
+</body>
+</html>
