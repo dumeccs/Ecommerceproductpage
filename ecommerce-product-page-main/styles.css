@@ -2,10 +2,7 @@ body{
     margin:0;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 1.24rem;
- 
-    
 }
-
 
 /* Progressive enhancement */
 header{
@@ -15,14 +12,12 @@ header{
     margin:0 auto;
 
 }
-
 nav{
     display: flex;
     justify-content: space-between;
     position: relative;
     
 }
-
 
 .active ul{
     display: flex;
@@ -54,9 +49,6 @@ nav{
     color:orange;
 }
 
-
-
-
 .icon-close{
     position:fixed;
     left:1em;
@@ -64,7 +56,6 @@ nav{
     top:5vh;
     display:none;
 }
-
 
 .nav-items{
     display: flex;
@@ -75,10 +66,6 @@ nav{
     
 }
 
-
-
-
- 
 .customer-avatar{
     width:2.5em;
     max-width:100%;
@@ -288,6 +275,7 @@ figure{
     margin-right: 2em;
 }
 
+
 .product-pricing{
     margin-bottom: 3em;
 }
@@ -357,6 +345,7 @@ figure{
     display: none;
 }
 
+
 .cart-checkout p{
     margin-top:0;
     margin-bottom: .2em;
@@ -384,4 +373,30 @@ figure{
 
 .checkout{
     margin-bottom: 2em;
+}
+
+
+@media (min-width:700px){
+    .product-display{
+        position: static;
+    }
+
+    .cart-checkout{
+        position: absolute;
+        width:300px;
+        height: 220px;
+        top:10%;
+        left:70%;
+        font-size:.7em;
+        box-shadow: -6px 23px 37px 21px rgba(196,198,209,0.47);
+    }
+    .checkout-btn{
+        padding:.8em
+    }
+    .cart-checkout h3{
+        padding-bottom:1.5em
+    }
+    .text-image-div{
+        margin-bottom: 2.2em;
+    }
 }
