@@ -400,3 +400,20 @@ figure{
         margin-bottom: 2.2em;
     }
 }
+
+
+.in-cart-container{
+    position:relative
+}
+
+#in-cart{
+    background-color: orange;
+    color: white;
+    border-radius: 40%;
+    height: 1.2em;
+    font-size:.5em;
+    padding:.1em .7em;
+    position:absolute;
+    left:60%;
+   
+}
