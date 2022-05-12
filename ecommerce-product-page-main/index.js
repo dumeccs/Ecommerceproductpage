@@ -128,16 +128,29 @@ const photoArray = [
 //     photoLength = 0
 // }
 
-let photoArrayLength = 0
 
+let photoArrayLength = 0
 nextBtn.addEventListener('click', function(){
-    if(photoArrayLength === photoArray.Length - 1){
-        console.log('nothing happened')
+  
+    if(photoArrayLength === (photoArray.length -1)){
         photoArrayLength = 0
         
        
     }
     photoArrayLength++
+  
+    mainImg.src = photoArray[photoArrayLength]
+    
+})
+
+prevBtn.addEventListener('click', function(){
+  
+    if(photoArrayLength === 0){
+        photoArrayLength = 4
+        
+       
+    }
+    photoArrayLength--
   
     mainImg.src = photoArray[photoArrayLength]
     
