@@ -12,7 +12,12 @@ const inCart = document.getElementById('in-cart')
 const calculatedPrice = document.getElementById('calculated-price')
 const displayWrapper = document.getElementById('checkout-wrapper')
 const checkoutSubmitBtn = document.getElementById('checkout-submit-btn')
+const prevBtn = document.getElementById('prev-image')
+const nextBtn =  document.getElementById('next-image')
+let mainImg = document.getElementById('main-img')
+
 addToCart.addEventListener('click',displayItemsInCart)
+
 let itemNumber = 0
 let discount = 0.5
 const originalPrice = 250
@@ -74,7 +79,7 @@ function removeItem(){
 
 if(itemNumber <  1){
     inCart.style.display = 'none'
-    displayWrapper.textContent = 'No item in cart'
+    displayWrapper.textContent = "Your cart is empty "
     checkoutSubmitBtn.style.display = 'none'
 }
 
@@ -82,8 +87,8 @@ function displayItemsInCart(){
     // let total =
     if(itemNumber <  1){
         inCart.style.display = 'none'
-        displayWrapper.textContent = "No item in cart yet"
         checkoutSubmitBtn.style.display = 'none'
+        displayWrapper.textContent = "Your cart is empty pls add some items to purchase"
     }
     
     else{
@@ -105,11 +110,36 @@ function displayItemsInCart(){
 
 
     inCart.textContent = itemNumber
-    
-    
+
 }
 
 
 
+const photoArray = [
+    "./images/image-product-1.jpg",
+    "./images/image-product-2.jpg",
+    "./images/image-product-3.jpg",
+    "./images/image-product-4.jpg"
+]
 
+// let photoLength = photoArray.length
+
+// if(photoLength === photoArray.length){
+//     photoLength = 0
+// }
+
+let photoArrayLength = 0
+
+nextBtn.addEventListener('click', function(){
+    if(photoArrayLength === photoArray.Length - 1){
+        console.log('nothing happened')
+        photoArrayLength = 0
+        
+       
+    }
+    photoArrayLength++
+  
+    mainImg.src = photoArray[photoArrayLength]
+    
+})
 
