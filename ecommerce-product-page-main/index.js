@@ -122,17 +122,11 @@ const photoArray = [
     "./images/image-product-4.jpg"
 ]
 
-// let photoLength = photoArray.length
-
-// if(photoLength === photoArray.length){
-//     photoLength = 0
-// }
-
 
 let photoArrayLength = 0
 nextBtn.addEventListener('click', function(){
   
-    if(photoArrayLength === (photoArray.length -1)){
+    if(photoArrayLength === (photoArray.length - 1)){
         photoArrayLength = 0
         
        
@@ -155,4 +149,17 @@ prevBtn.addEventListener('click', function(){
     mainImg.src = photoArray[photoArrayLength]
     
 })
+
+
+
+
+
+
+let ClickedImageArr = document.getElementsByClassName('click-img')[0].children
+
+Array.from(ClickedImageArr).forEach((element, index) => {
+    element.addEventListener('click', function(){
+        mainImg.src = photoArray[index]
+    })
+});
 
