@@ -207,13 +207,15 @@ figure{
 .current-price{
     font-size:2em;
     margin-right:1em;
+    margin-bottom: 0;
 }
 
 .discount-percent{
     background-color: hsl(25, 100%, 94%);
     color:hsl(26, 100%, 55%);
     font-size: 1.5rem;
-    border-radius: 5px;;
+    border-radius: 5px;
+    /* made some adjustment and did code patching around here 😂 */
 }
 
 .original-price{
@@ -317,6 +319,16 @@ figure{
 
     .active{
         display:none;
+    }
+
+    .original-price{
+        display: block;
+        text-align: left;
+        margin-top:0;
+    
+    }
+    .discount-percent{
+        margin-bottom: -10px;
     }
    
   
