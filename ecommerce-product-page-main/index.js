@@ -124,16 +124,19 @@ const photoArray = [
 
 
 let photoArrayLength = 0
+console.log(photoArray.length-1)
 nextBtn.addEventListener('click', function(){
   
     if(photoArrayLength === (photoArray.length - 1)){
-        photoArrayLength = 0
-        
+        photoArrayLength = -1
+    
        
     }
+    
     photoArrayLength++
-  
     mainImg.src = photoArray[photoArrayLength]
+  
+   
     
 })
 
